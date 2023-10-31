@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(269.84deg, #0c164d 0.11%, #190b22 99.83%);
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.Solen {
+  background-color: #ffd029;
+  width: 60rem;
+  height: 60rem;
+  border-radius: 50%;
+  margin-left: -50rem;
+}
+
+.Merkurius {
+  background-color: #888;
+  height: 0.875rem;
+  width: 0.875rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4.31rem;
+  margin-left: 5.31rem;
+}
+.Venus {
+  background-color: #e7cdcd;
+  height: 1.625rem;
+  width: 1.625rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4.31rem;
+}
+.Jorden {
+  background-color: #428ed4;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  margin-right: 4.38rem;
+}
+.Mars {
+  background-color: #ef5f5f;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5.56rem;
+}
+.Jupiter {
+  background-color: #e29468;
+  height: 11.75rem;
+  width: 11.75rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6.94rem;
+}
+.Saturnus {
+  background-color: #c7aa72;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.Uranus {
+  background-color: #c9d4f1;
+  height: 4.125rem;
+  width: 4.125rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7.31rem;
+}
+.Neptunus {
+  background-color: #7a91a7;
+  height: 4.125rem;
+  width: 4.125rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6.5rem;
+  margin-right: 5rem;
+}
+.Saturnus::before {
+  content: "";
+  width: 13.63944rem;
+  height: 0.34381rem;
+  transform: rotate(-30deg);
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+}
