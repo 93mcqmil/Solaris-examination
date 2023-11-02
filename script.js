@@ -14,6 +14,7 @@ const getPlanetsData = async () => {
   }
 };
 
+//funktion för klick funktionen.
 allPlanets.forEach(function (planet) {
   planet.addEventListener("click", function () {
     const clickedElementId = planet.id;
