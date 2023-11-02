@@ -16,7 +16,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-.Solen {
+#solen {
   background-color: #ffd029;
   width: 60rem;
   height: 60rem;
@@ -26,7 +26,7 @@ body {
   cursor: pointer;
 }
 
-.Merkurius {
+#Merkurius {
   background-color: #888;
   height: 0.875rem;
   width: 0.875rem;
@@ -37,7 +37,7 @@ body {
   margin-left: 5.31rem;
   cursor: pointer;
 }
-.Venus {
+#Venus {
   background-color: #e7cdcd;
   height: 1.625rem;
   width: 1.625rem;
@@ -47,7 +47,7 @@ body {
   margin-right: 4.31rem;
   cursor: pointer;
 }
-.Jorden {
+#Jorden {
   background-color: #428ed4;
   height: 1.75rem;
   width: 1.75rem;
@@ -58,7 +58,7 @@ body {
   margin-right: 4.38rem;
   cursor: pointer;
 }
-.Mars {
+#Mars {
   background-color: #ef5f5f;
   width: 0.875rem;
   height: 0.875rem;
@@ -68,7 +68,7 @@ body {
   margin-right: 5.56rem;
   cursor: pointer;
 }
-.Jupiter {
+#Jupiter {
   background-color: #e29468;
   height: 11.75rem;
   width: 11.75rem;
@@ -78,7 +78,7 @@ body {
   margin-right: 6.94rem;
   cursor: pointer;
 }
-.Saturnus {
+#Saturnus {
   background-color: #c7aa72;
   height: 9rem;
   width: 9rem;
@@ -88,7 +88,7 @@ body {
   display: flex;
   cursor: pointer;
 }
-.Uranus {
+#Uranus {
   background-color: #c9d4f1;
   height: 4.125rem;
   width: 4.125rem;
@@ -98,7 +98,7 @@ body {
   margin-left: 7.31rem;
   cursor: pointer;
 }
-.Neptunus {
+#Neptunus {
   background-color: #7a91a7;
   height: 4.125rem;
   width: 4.125rem;
@@ -109,7 +109,7 @@ body {
   margin-right: 5rem;
   cursor: pointer;
 }
-.Saturnus::before {
+#Saturnus::before {
   content: "";
   width: 13.63944rem;
   height: 0.34381rem;

@@ -1,19 +1,24 @@
 const url = "https://majazocom.github.io/Data/solaris.json";
-const planetList = document.getElementById("planet-list");
-
-async function getPlanetsData() {
+const allPlanets = document.querySelectorAll(".allPlanets");
+const getPlanetsData = async () => {
   //Skapat en funktion för att få fram all data i json objektet
   try {
-    const data = await fetch(url);
-    if (data.ok) {
-      const result = await data.json();
-      console.log(result);
-    } else {
-      console.error("Failed to fetch data");
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error("Failed");
     }
+    const data = await response.json();
+    console.log(data);
   } catch (error) {
     console.error("An error occurred:", error);
   }
-}
+};
 
+allPlanets.forEach(function (planet) {
+  planet.addEventListener("click", function () {
+    const clickedElementId = planet.id;
+    //information(clickedElementId);
+    console.log(clickedElementId);
+  });
+});
 getPlanetsData();
