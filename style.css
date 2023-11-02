@@ -3,27 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
 
+#overlay {
+  display: none;
+  background: linear-gradient(90deg, #0c164d 0%, #190b22 100%);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
 body {
   background: linear-gradient(269.84deg, #0c164d 0.11%, #190b22 99.83%);
   padding: 0;
   margin: 0;
+  height: 100vh;
+  width: 100vw;
 }
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  /* height: 100vh; */
+  /* overflow: hidden; */
 }
-#solen {
+#Solen {
   background-color: #ffd029;
-  width: 60rem;
-  height: 60rem;
+  width: 45rem;
+  height: 45rem;
   border-radius: 50%;
-  margin-left: -50rem;
+  margin-left: -38rem;
   box-shadow: 0px 0px 250px 0px rgba(255, 208, 41, 0.2);
   cursor: pointer;
+}
+.blueSun {
+  background-color: rgba(66, 142, 212, 1);
+  width: 45rem;
+  height: 45rem;
+  border-radius: 50%;
+  margin-left: -38rem;
+  cursor: pointer;
+  box-shadow: rgb(66, 142, 212, 0.1) 0px 0px 0px 100px,
+    rgb(66, 142, 212, 0.06) 0px 0px 0px 50px;
 }
 
 #Merkurius {
