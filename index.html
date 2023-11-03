@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <h1>SOLSYSTEMET</h1> -->
-    <!-- <h2>SOLARIS</h2> -->
-
+    <div class="solsystem">
+      <h1>SOLSYSTEMET</h1>
+      <h2>SOLARIS</h2>
+    </div>
     <div class="wrapper">
       <div class="container">
         <div class="allPlanets" id="Solen"></div>
@@ -24,30 +25,34 @@
         <div class="Saturnus-slash"></div>
       </div>
       <div id="overlay">
+        <div id="stars"></div>
         <div class="blueSun"></div>
-        <h2 class="planetName"></h2>
-        <h3 class="planetLatinName"></h3>
-        <p class="planetDescription"></p>
-        <article class="cirkumFerence">
-          <h3>omkrets</h3>
-          <p class=""></p>
-        </article>
-        <article class="distance">
-          <h3>km från solen</h3>
-          <p class=""></p>
-        </article>
-        <article class="maxTemperatur">
-          <h3>maxTemperatur</h3>
-          <p class=""></p>
-        </article>
-        <article class="minTemperatur">
-          <h3>minTemperatur</h3>
-          <p class=""></p>
-        </article>
-        <article class="månar">
-          <h3>månar</h3>
-          <p class=""></p>
-        </article>
+        <div class="grid-container">
+          <button id="btn" onclick="returnOverlay()">Back</button>
+          <h2 class="planetName"></h2>
+          <h3 class="planetLatinName"></h3>
+          <p class="planetDescription"></p>
+          <article class="omkrets">
+            <h3>omkrets</h3>
+            <p class="cirkumFerence"></p>
+          </article>
+          <article class="theDistance">
+            <h3>km från solen</h3>
+            <p class="distance"></p>
+          </article>
+          <article class="maxTemp">
+            <h3>maxTemperatur</h3>
+            <p class="maxTemperatur"></p>
+          </article>
+          <article class="minTemp">
+            <h3>minTemperatur</h3>
+            <p class="minTemperatur"></p>
+          </article>
+          <article class="gridMånar">
+            <h3>månar</h3>
+            <p class="månar"></p>
+          </article>
+        </div>
       </div>
     </div>
 
