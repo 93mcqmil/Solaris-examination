@@ -18,10 +18,12 @@ const getPlanetsData = async () => {
 };
 
 //funktion för klick funktionen.
+
 allPlanets.forEach(function (planet) {
   planet.addEventListener("click", function () {
     const clickedElementId = planet.id;
     //minaplaneter(clickedElementId);
+
     const items = dataInfo.find((item) => item.name === clickedElementId);
     if (items) {
       document.getElementById("overlay").style.display = "block";
