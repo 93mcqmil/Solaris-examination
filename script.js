@@ -1,9 +1,9 @@
 const url = "https://majazocom.github.io/Data/solaris.json";
 const allPlanets = document.querySelectorAll(".allPlanets");
 const overlay = document.getElementById("overlay");
-let dataInfo; //Var tvunget att göra data global så att den är tillgänglig på andra delar i koden
+let dataInfo; //Had to make data global for it to be able to run on different code layout
 const getPlanetsData = async () => {
-  //Skapat en funktion för att få fram all data i json objektet
+  //Fetch funktion
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -18,12 +18,11 @@ const getPlanetsData = async () => {
   }
 };
 
-//funktion för klick funktionen.
+//Loops through every element
 
 allPlanets.forEach(function (planet) {
   planet.addEventListener("click", function () {
     const clickedElementId = planet.id;
-    //minaplaneter(clickedElementId);
 
     const items = dataInfo.find((item) => item.name === clickedElementId);
     if (items) {
@@ -37,8 +36,7 @@ allPlanets.forEach(function (planet) {
   });
 });
 
-getPlanetsData();
-
+//targeting elements for my Grid-container
 function showOverlay(planet) {
   document.querySelector(".planetName").textContent = `${planet.name}`;
   document.querySelector(
@@ -56,9 +54,11 @@ function showOverlay(planet) {
 function returnOverlay() {
   overlay.style.display = "none";
 }
+
+//Stars funktion
 const starContainer = document.getElementById("stars");
 function createStars() {
-  for (let i = 0; i < 99; i++) {
+  for (let i = 0; i < 70; i++) {
     const star = document.createElement("div");
     star.className = "star";
     star.style.left = `${Math.random() * 100}%`;
@@ -66,3 +66,4 @@ function createStars() {
     starContainer.appendChild(star);
   }
 }
+getPlanetsData();
